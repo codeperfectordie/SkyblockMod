@@ -1,0 +1,19 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Code Perfect Functions for skyblock",
+        "name": "Code Perfect Skyblock Functions",
+        "uuid": "54bcbf80-f044-436f-adcd-4b450ef7b42d",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 11, 3]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "data",
+            "uuid": "a55ea49f-a3eb-4c41-a02a-28dd925f0acf",
+            "version": [1, 0, 0]
+        }
+    ]
+}
+
