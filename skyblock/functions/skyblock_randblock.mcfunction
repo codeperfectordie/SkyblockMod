@@ -5,7 +5,7 @@ execute @e[tag=conditional,scores={BLOCK_COUNT=100}] ~ ~ ~ scoreboard players ad
 
 #display the block count and phase if it has changed
 execute @e[tag=conditional,scores={IS_AIR=1 }] ~ ~ ~ scoreboard players operation @a BLOCK_COUNT = @e[tag=conditional] BLOCK_COUNT
-execute @e[tag=conditional,scores={IS_AIR=1 }] ~ ~ ~ titleraw @a actionbar {"rawtext":[{"score":{"name":"*","objective":"BLOCK_COUNT"}},{"text":" blocks destroyed!"}]}
+execute @e[tag=conditional,scores={IS_AIR=1 }] ~ ~ ~ titleraw @a actionbar {"rawtext":[{"text":"Phase "},{"score":{"name":"*","objective":"PHASE"}},{"text":": "},{"score":{"name":"*","objective":"BLOCK_COUNT"}},{"text":" blocks destroyed!"}]}
 
 execute @e[tag=conditional,scores={BLOCK_COUNT=100}] ~ ~ ~ scoreboard players operation @a PHASE = @e[tag=conditional] PHASE
 execute @e[tag=conditional,scores={BLOCK_COUNT=100}] ~ ~ ~ titleraw @a title {"rawtext":[{"text":"Starting phase "},{"score":{"name":"*","objective":"PHASE"}},{"text":"!"}]}

@@ -13,6 +13,8 @@ scoreboard objectives add TICS_05_SEC dummy
 scoreboard objectives add TICS_10_SEC dummy
 scoreboard objectives add TICS_30_SEC dummy
 scoreboard objectives add TICS_60_SEC dummy
+
+scoreboard objectives add IS_02_TIC dummy
 scoreboard objectives add IS_01_SEC dummy
 scoreboard objectives add IS_05_SEC dummy
 scoreboard objectives add IS_10_SEC dummy
@@ -35,6 +37,7 @@ scoreboard players set @e[tag=conditional] TICS_05_SEC 0
 scoreboard players set @e[tag=conditional] TICS_10_SEC 0
 scoreboard players set @e[tag=conditional] TICS_30_SEC 0
 scoreboard players set @e[tag=conditional] TICS_60_SEC 0
+scoreboard players set @e[tag=conditional] IS_02_TIC 0
 scoreboard players set @e[tag=conditional] IS_01_SEC 0
 scoreboard players set @e[tag=conditional] IS_05_SEC 0
 scoreboard players set @e[tag=conditional] IS_10_SEC 0
