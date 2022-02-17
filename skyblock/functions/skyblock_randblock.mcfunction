@@ -1,5 +1,7 @@
 scoreboard players random @e[tag=conditional] RAND 1 100 
 
+execute @e[tag=conditional] ~ ~ ~ detect 0 150 0 air -1 scoreboard players set @e[tag=conditional] IS_AIR 1
+
 execute @e[tag=conditional,scores={IS_AIR=1 }] ~ ~ ~ scoreboard players add @e[tag=conditional] BLOCK_COUNT 1
 execute @e[tag=conditional,scores={BLOCK_COUNT=100}] ~ ~ ~ scoreboard players add @e[tag=conditional] PHASE 1
 

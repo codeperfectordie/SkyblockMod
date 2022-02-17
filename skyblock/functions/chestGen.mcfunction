@@ -23,6 +23,8 @@ scoreboard players add @e[tag=conditional] CHEST_STEP_INIT 0
 scoreboard players add @e[tag=conditional] CHEST_ITEMS 0
 scoreboard players add @e[tag=conditional] RAND_ITEM 0
 
+execute @e[tag=conditional] ~ ~ ~ detect 996 -55 -1 air -1 scoreboard players set @e[tag=conditional] IS_CHEST 0
+
 scoreboard players set @e[tag=conditional,scores={CHEST_STEP=0}] CHEST_ITEMS 0
 scoreboard players set @e[tag=conditional,scores={CHEST_STEP=0}] RAND_ITEM 0
 scoreboard players operation @e[tag=conditional] CHEST_STEP_INIT = @e[tag=conditional] CHEST_STEP
@@ -59,7 +61,7 @@ execute @e[tag=conditional,scores={CHEST_STEP=1..1000}] ~ ~ ~ scoreboard players
 #COBBLESTONE: 	1001 -55 -2
 
 #step 3: fill with the random item
-execute @e[tag=conditional,scores={PHASE=1..2,CHEST_STEP=3,RAND_ITEM=1..25       }] ~ ~ ~ clone 1006 -55 -1 1006 -55 -1   1001 -55 -2  replace move
+execute @e[tag=conditional,scores={PHASE=1..2,CHEST_STEP=3,RAND_ITEM=1..25       }] ~ ~ ~ clone 1006 -55 -1 1006 -55 -1    1001 -55 -2  replace move
 execute @e[tag=conditional,scores={PHASE=1..2,CHEST_STEP=3,RAND_ITEM=26..45       }] ~ ~ ~ clone 1006 -55 -1 1006 -55 -1   1004 -55 -2  replace move
 execute @e[tag=conditional,scores={PHASE=1..2,CHEST_STEP=3,RAND_ITEM=46..55       }] ~ ~ ~ clone 1006 -55 -1 1006 -55 -1   1006 -55 -2  replace move
 execute @e[tag=conditional,scores={PHASE=1..2,CHEST_STEP=3,RAND_ITEM=56..61       }] ~ ~ ~ clone 1006 -55 -1 1006 -55 -1   1006 -49 -2  replace move
